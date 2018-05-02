@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.esri.android.map.MapView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnTools"
+                    style="@style/icon_map"
+                    android:background="@drawable/button_tool_23" />
+
+                <ImageButton
+                    android:id="@+id/ivFollowOrCompass"
+                    style="@style/icon_map"
+                    android:background="@drawable/location_btn_bg" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bnav_rg_map_scale_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottombar_button_margin03"
+            android:layout_marginLeft="@dimen/bottombar_button_margin03"
+            android:layout_marginRight="@dimen/bottombar_button_margin03"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/location1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_textsize1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="7.0dip"
+                    android:background="@drawable/nsdk_drawable_rg_ic_scale_indicator"
+                    android:paddingTop="-5.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
