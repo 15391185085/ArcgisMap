@@ -1,4 +1,4 @@
-The AGIS License
+The ArcgisMap License
 
 Copyright (c) 2021, lihaoxiang
 All rights reserved.
